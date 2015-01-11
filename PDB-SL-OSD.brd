@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -34,8 +34,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
@@ -5745,9 +5745,6 @@ design rules under a new name.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
-<param name="AutoGrid" value="1"/>
-<param name="Efforts" value="0"/>
-<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -5857,7 +5854,7 @@ design rules under a new name.</description>
 <element name="U$16" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="36.195" y="153.9875"/>
 <element name="U$19" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="37.465" y="115.2525"/>
 <element name="U$20" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="34.29" y="115.2525"/>
-<element name="BUZZER" library="buzzer" package="F/TMB" value="F/TMB" x="45.6946" y="122.5169" smashed="yes" rot="R90">
+<element name="BUZZER" library="buzzer" package="F/TMB" value="5V" x="45.6946" y="122.5169" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="45.6946" y="122.5169" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="45.6946" y="122.5169" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="45.6946" y="122.5169" size="1.778" layer="27" rot="R90" display="off"/>
@@ -5865,113 +5862,113 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="49.5046" y="118.7069" size="1.27" layer="27" ratio="10" rot="R90"/>
 <attribute name="NAME" x="38.981559375" y="119.69535" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="C1" library="rcl" package="UD-10X10_NICHICON" value="" x="31.115" y="137.795" rot="R270"/>
-<element name="L1" library="rcl" package="POWER-CHOKE_WE-TPC" value="" x="45.085" y="137.795"/>
-<element name="LED1" library="led" package="SML1206" value="" x="16.891" y="180.1495" smashed="yes" rot="R270">
+<element name="C1" library="rcl" package="UD-10X10_NICHICON" value="470uF/25V" x="31.115" y="137.795" rot="R270"/>
+<element name="L1" library="rcl" package="POWER-CHOKE_WE-TPC" value="100uH" x="45.085" y="137.795"/>
+<element name="LED1" library="led" package="SML1206" value="WHITE" x="16.891" y="180.1495" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.2085" y="182.102" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="14.891" y="181.1495" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="LED2" library="led" package="SML1206" value="" x="59.443" y="180.0225" smashed="yes" rot="R90">
+<element name="LED2" library="led" package="SML1206" value="WHITE" x="59.443" y="180.0225" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.443" y="177.7525" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="61.443" y="179.0225" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1" library="resistor" package="R1206" value="" x="59.436" y="174.9425" smashed="yes" rot="R90">
+<element name="R1" library="resistor" package="R1206" value="680" x="59.436" y="174.9425" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.1185" y="173.125" size="1.016" layer="25" rot="R90"/>
 </element>
-<element name="LED3" library="led" package="SML1206" value="" x="59.055" y="12.065" smashed="yes" rot="R90">
+<element name="LED3" library="led" package="SML1206" value="RED" x="59.055" y="12.065" smashed="yes" rot="R90">
 <attribute name="NAME" x="58.055" y="8.8425" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="61.055" y="11.065" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="LED4" library="led" package="SML1206" value="" x="17.145" y="11.7475" smashed="yes" rot="R270">
+<element name="LED4" library="led" package="SML1206" value="RED" x="17.145" y="11.7475" smashed="yes" rot="R270">
 <attribute name="NAME" x="18.4625" y="13.065" size="1.27" layer="25" rot="R270"/>
 <attribute name="VALUE" x="15.145" y="12.7475" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R2" library="resistor" package="R1206" value="" x="17.145" y="16.8275" smashed="yes" rot="R270">
+<element name="R2" library="resistor" package="R1206" value="680" x="17.145" y="16.8275" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.2875" y="20.8675" size="1.016" layer="25" rot="R270"/>
 </element>
-<element name="LED5" library="led" package="SML1206" value="" x="16.8275" y="180.0225" smashed="yes" rot="MR90">
+<element name="LED5" library="led" package="SML1206" value="WHITE" x="16.8275" y="180.0225" smashed="yes" rot="MR90">
 <attribute name="NAME" x="18.145" y="177.7525" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="14.8275" y="179.0225" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED6" library="led" package="SML1206" value="" x="15.875" y="169.545" smashed="yes" rot="MR90">
+<element name="LED6" library="led" package="SML1206" value="WHITE" x="15.875" y="169.545" smashed="yes" rot="MR90">
 <attribute name="NAME" x="17.1925" y="167.275" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.875" y="168.545" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R3" library="resistor" package="R1206" value="" x="16.1925" y="174.9425" smashed="yes" rot="MR270">
+<element name="R3" library="resistor" package="R1206" value="680" x="16.1925" y="174.9425" smashed="yes" rot="MR270">
 <attribute name="NAME" x="18.685" y="177.7125" size="1.016" layer="26" rot="MR270"/>
 </element>
-<element name="LED7" library="led" package="SML1206" value="" x="45.72" y="184.4675" smashed="yes" rot="MR180">
+<element name="LED7" library="led" package="SML1206" value="WHITE" x="45.72" y="184.4675" smashed="yes" rot="MR180">
 <attribute name="NAME" x="45.6725" y="183.15" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="44.72" y="186.4675" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="LED8" library="led" package="SML1206" value="" x="29.5275" y="184.4675" smashed="yes" rot="MR180">
+<element name="LED8" library="led" package="SML1206" value="WHITE" x="29.5275" y="184.4675" smashed="yes" rot="MR180">
 <attribute name="NAME" x="27.575" y="183.15" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="28.5275" y="186.4675" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R4" library="resistor" package="R1206" value="" x="38.1" y="184.4675" smashed="yes" rot="MR90">
+<element name="R4" library="resistor" package="R1206" value="680" x="38.1" y="184.4675" smashed="yes" rot="MR90">
 <attribute name="NAME" x="39.4175" y="183.6025" size="1.016" layer="26" rot="MR90"/>
 </element>
-<element name="LED9" library="led" package="SML1206" value="" x="59.3725" y="180.0225" smashed="yes" rot="MR90">
+<element name="LED9" library="led" package="SML1206" value="WHITE" x="59.3725" y="180.0225" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.1975" y="178.07" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="57.3725" y="179.0225" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED10" library="led" package="SML1206" value="" x="60.0075" y="169.545" smashed="yes" rot="MR90">
+<element name="LED10" library="led" package="SML1206" value="WHITE" x="60.0075" y="169.545" smashed="yes" rot="MR90">
 <attribute name="NAME" x="57.8325" y="166.9575" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="58.0075" y="168.545" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R5" library="resistor" package="R1206" value="" x="56.515" y="169.545" smashed="yes" rot="MR270">
+<element name="R5" library="resistor" package="R1206" value="680" x="56.515" y="169.545" smashed="yes" rot="MR270">
 <attribute name="NAME" x="55.1975" y="170.7275" size="1.016" layer="26" rot="MR270"/>
 </element>
-<element name="LED11" library="led" package="SML1206" value="" x="15.24" y="110.49" smashed="yes" rot="MR90">
+<element name="LED11" library="led" package="SML1206" value="RED" x="15.24" y="110.49" smashed="yes" rot="MR90">
 <attribute name="NAME" x="16.5575" y="107.9025" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.24" y="109.49" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED12" library="led" package="SML1206" value="" x="15.24" y="80.52488125" smashed="yes" rot="MR90">
+<element name="LED12" library="led" package="SML1206" value="RED" x="15.24" y="80.52488125" smashed="yes" rot="MR90">
 <attribute name="NAME" x="16.5575" y="77.93738125" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.24" y="79.52488125" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R6" library="resistor" package="R1206" value="" x="15.24" y="74.6125" smashed="yes" rot="MR90">
+<element name="R6" library="resistor" package="R1206" value="680" x="15.24" y="74.6125" smashed="yes" rot="MR90">
 <attribute name="NAME" x="16.875" y="71.8425" size="1.016" layer="26" rot="MR90"/>
 </element>
-<element name="LED13" library="led" package="SML1206" value="" x="60.953240625" y="110.49" smashed="yes" rot="MR90">
+<element name="LED13" library="led" package="SML1206" value="RED" x="60.953240625" y="110.49" smashed="yes" rot="MR90">
 <attribute name="NAME" x="58.460740625" y="107.9025" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="58.953240625" y="109.49" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED14" library="led" package="SML1206" value="" x="60.953240625" y="80.52488125" smashed="yes" rot="MR90">
+<element name="LED14" library="led" package="SML1206" value="RED" x="60.953240625" y="80.52488125" smashed="yes" rot="MR90">
 <attribute name="NAME" x="58.460740625" y="77.93738125" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="58.953240625" y="79.52488125" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R7" library="resistor" package="R1206" value="" x="60.953240625" y="74.6125" smashed="yes" rot="MR90">
+<element name="R7" library="resistor" package="R1206" value="680" x="60.953240625" y="74.6125" smashed="yes" rot="MR90">
 <attribute name="NAME" x="60.683240625" y="70.255" size="1.016" layer="26" rot="MR90"/>
 </element>
-<element name="LED15" library="led" package="SML1206" value="" x="60.0075" y="21.9075" smashed="yes" rot="MR90">
+<element name="LED15" library="led" package="SML1206" value="RED" x="60.0075" y="21.9075" smashed="yes" rot="MR90">
 <attribute name="NAME" x="58.69" y="24.495" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="58.0075" y="20.9075" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED16" library="led" package="SML1206" value="" x="59.055" y="11.7475" smashed="yes" rot="MR90">
+<element name="LED16" library="led" package="SML1206" value="RED" x="59.055" y="11.7475" smashed="yes" rot="MR90">
 <attribute name="NAME" x="56.5625" y="8.8425" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="57.055" y="10.7475" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="R8" library="resistor" package="R1206" value="" x="59.055" y="17.4625" smashed="yes" rot="MR180">
+<element name="R8" library="resistor" package="R1206" value="680" x="59.055" y="17.4625" smashed="yes" rot="MR180">
 <attribute name="NAME" x="55.015" y="18.3675" size="1.016" layer="26" rot="MR180"/>
 </element>
-<element name="LED17" library="led" package="SML1206" value="" x="15.5575" y="22.225" smashed="yes" rot="MR90">
+<element name="LED17" library="led" package="SML1206" value="RED" x="15.5575" y="22.225" smashed="yes" rot="MR90">
 <attribute name="NAME" x="16.5575" y="19.955" size="1.27" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="13.5575" y="21.225" size="1.27" layer="28" rot="MR90"/>
 </element>
-<element name="LED18" library="led" package="SML1206" value="" x="17.1275" y="11.6675" smashed="yes" rot="MR270">
+<element name="LED18" library="led" package="SML1206" value="RED" x="17.1275" y="11.6675" smashed="yes" rot="MR270">
 <attribute name="NAME" x="19.81" y="15.9675" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="19.1275" y="12.6675" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="LED19" library="led" package="SML1206" value="" x="46.0375" y="6.0325" smashed="yes" rot="MR180">
+<element name="LED19" library="led" package="SML1206" value="RED" x="46.0375" y="6.0325" smashed="yes" rot="MR180">
 <attribute name="NAME" x="47.895" y="8.2075" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="45.0375" y="8.0325" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="LED20" library="led" package="SML1206" value="" x="28.8925" y="6.0325" smashed="yes" rot="MR180">
+<element name="LED20" library="led" package="SML1206" value="RED" x="28.8925" y="6.0325" smashed="yes" rot="MR180">
 <attribute name="NAME" x="22.1775" y="8.8425" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="27.8925" y="8.0325" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="R10" library="resistor" package="R1206" value="" x="37.7825" y="6.0325" smashed="yes" rot="MR270">
+<element name="R10" library="resistor" package="R1206" value="680" x="37.7825" y="6.0325" smashed="yes" rot="MR270">
 <attribute name="NAME" x="36.6395" y="7.4295" size="1.27" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="40.1955" y="7.4295" size="1.27" layer="28" rot="MR270"/>
 </element>
@@ -5987,7 +5984,7 @@ design rules under a new name.</description>
 <element name="U$26" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="53.975" y="73.025" rot="R90"/>
 <element name="U$27" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="53.975" y="71.12" rot="R90"/>
 <element name="U$28" library="oc" package="OC_PAD_AV" value="OC_PAD_AV" x="53.975" y="74.93" rot="R90"/>
-<element name="R9" library="ref-packages" package="R1206" value="" x="17.12" y="17.42" rot="MR0"/>
+<element name="R9" library="ref-packages" package="R1206" value="680" x="17.12" y="17.42" rot="MR0"/>
 </elements>
 <signals>
 <signal name="VCC">
