@@ -1,4 +1,4 @@
-PDB (UNDER DEVELOPMENT)
+PDB
 ===
 
 PDB: Power distribution board for ZMR 250 H-Quad Frame
@@ -6,9 +6,10 @@ PDB: Power distribution board for ZMR 250 H-Quad Frame
 16/12/2014
 Upload of current version: v2 (Minim OSD Board compatible)
 
-
+17/01/2015
+Development closed for this v2.
 
 License: Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)
 https://creativecommons.org/licenses/by-nc-sa/4.0/
 
-Special thanks to all who contributed to made this possible: Triggerr, Overcraft, cansi22, grafisoft, RepParts3D and all the members of SpainLabs community. Thanks!
+Special thanks to all who contributed to made this possible: Triggerr, Overcraft, cansi22, grafisoft, hectorri, RepParts3D and all the members of SpainLabs community. Thanks!
